@@ -69,7 +69,7 @@ public class SearchUser extends HttpServlet {
 
         if (req.getParameter("searchValue") != null) {
             users = userData.getSpecificUsers(req.getParameter("searchType"), req.getParameter("searchValue"), req.getParameter("searchOperator"));
-            User user = userData.getSingleUser(req.getParameter("searchType"), req.getParameter("searchValue"), req.getParameter("searchOperator"));
+            //User user = userData.getSingleUser(req.getParameter("searchType"), req.getParameter("searchValue"), req.getParameter("searchOperator"));
             //System.out.println(user.toString());
             logger.info("Some message you want logged");
         } else {
